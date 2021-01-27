@@ -1,0 +1,42 @@
+.card_container{
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.movie-poster{
+    border-radius: 10%;
+    width: 100% !important;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    object-fit: cover;
+}
+
+.movie-poster:hover{
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.overview h4{
+    color: black;
+}
+
+.card_container:hover .overview {
+    transform: translateY(0%);
+    margin: 0px 10px 0px 10px;
+}
